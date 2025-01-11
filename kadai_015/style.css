@@ -1,0 +1,43 @@
+/*全体のフォント変更*/
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+/*h2のフォント変更*/
+rem {
+  font-size: 20px;
+}
+
+/*フォントカラー変更*/
+.pink {
+  /* 以下はRGBで色を指定しています */
+  color: rgb(255, 192, 203);
+}
+.blue {
+  color: skyblue;
+}
+
+/*h1の変更*/
+h1 {
+  /* フォントの変更 */
+  font-family: "Josefin Sans", sans-serif;
+  /* フォントサイズの変更 */
+  font-size: 40px;
+  /*字間を変える*/
+  line-height: 4.5;
+  letter-spacing: 1.2em;
+  /*影をつける*/
+  text-shadow: 1px 1px 2px gray;
+  /*実線を引く*/
+  border-bottom: solid 3px rgb(115, 115, 114);
+}
+
+/*フォント太字*/
+#basic > p {
+  font-weight: bold;
+}
+
+/*フォントセンター*/
+body {
+  text-align: center;
+}
