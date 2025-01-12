@@ -1,10 +1,11 @@
 /*全体のフォント変更*/
 body {
   font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
 }
 
-/*h2のフォント変更*/
-rem {
+/*ルート要素のフォント変更*/
+html {
   font-size: 20px;
 }
 
@@ -19,12 +20,11 @@ rem {
 
 /*h1の変更*/
 h1 {
+  /* フォントサイズの変更 */
+  font-size: 2rem;
   /* フォントの変更 */
   font-family: "Josefin Sans", sans-serif;
-  /* フォントサイズの変更 */
-  font-size: 40px;
   /*字間を変える*/
-  line-height: 4.5;
   letter-spacing: 1.2em;
   /*影をつける*/
   text-shadow: 1px 1px 2px gray;
@@ -35,9 +35,4 @@ h1 {
 /*フォント太字*/
 #basic > p {
   font-weight: bold;
-}
-
-/*フォントセンター*/
-body {
-  text-align: center;
 }
