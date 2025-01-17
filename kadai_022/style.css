@@ -1,18 +1,18 @@
 
 body, h1, p {
-  margin: 0px;
+  margin: 0;
+}
+
+p,a {
+  font-size: 20px;
 }
 
 header {
-  margin: 0px;
-  min-height: 20px;
+  margin-bottom: 20px;/*下の余白*/
   background-color: rgb(244, 79, 79);
   text-align: center;
 }
 
-main {
-  margin: 10px;
-}
 
 h1 {
   color: rgb(255, 255, 255);
@@ -20,17 +20,21 @@ h1 {
   margin: 0;
 }
 
+main {
+  padding: 10px;/*要素内*/
+}
+
 #parent {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;/*均等に並べる*/
   padding: 3px;
 }
 
 .contents {
   border: solid 3px rgb(238, 204, 204);
   flex-basis: 25%;
-  padding: 10px 15px 10px 15px;
-  margin: 20px 0px 20px 0px;
+  padding: 10px 15px 10px 15px;/*要素内*/
+  margin: 20px 0px 20px 0px;/*要素外*/
   text-align: center;
 }
 
@@ -59,15 +63,15 @@ footer {
   text-align: center;
 }
 
-a {
+footer a {
   color: rgb(255, 255, 255);
 }
 
-a:visited {
+footer a:visited {
   color: rgb(193, 234, 251);
 }
 
-a:hover {
+footer a:hover {
   color: rgb(245, 178, 168);
 }
 
@@ -81,6 +85,6 @@ a:hover {
       font-size: 25px;
   }
   #parent {
-    display: block;
+    flex-direction: column;/*列にする*/
   }
 }
